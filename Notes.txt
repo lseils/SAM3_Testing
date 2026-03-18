@@ -1,0 +1,38 @@
+
+
+
+-------------------------------------------------------------------
+SAM 3 is currently the best model in the world for "concept segmentation" 
+(understanding text prompts like "building facade" [1]), 
+so it is highly recommended to take the 2 minutes to grab it.
+
+    Go to Hugging Face and search for Meta's SAM 3 model page 
+    (or go to huggingface.co/meta-llama).
+
+    Create a free Hugging Face account (if you don't have one)
+    and click "Agree to License" on the model page. 
+    Meta usually auto-approves this instantly.
+
+    Go to the "Files" tab and download the file named exactly sam3_b.pt.
+
+    Drag and drop that sam3_b.pt file directly into your Python project folder 
+    (the exact same folder where your Python script is located).
+
+    Run your script again. It will instantly find the file locally 
+    and begin masking!
+
+-------------------------------------------------------------------
+After I get Sam3 up:
+Run the SAM 3 script.
+
+Open your masked_buildings folder. 
+You will see your Google Street View images, but the sky, cars, and streets
+will be completely deleted and replaced with a transparent background.
+
+You can now drag and drop that entire folder of transparent
+.png files into Postshot (for Gaussian Splatting) 
+or Meshroom (for Photogrammetry). 
+Because the background noise is entirely gone, 
+the 3D software will perfectly stitch the building facade together!
+
+-------------------------------------------------------------------
